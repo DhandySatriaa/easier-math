@@ -349,6 +349,22 @@ void menu_bangun_datar(){
         }
         break;
     case '4':
+	system("cls");
+        printf("|---- Selamat Datang di Kalkulator Jajar Genjang ----|\n\n"
+               "Menu:\n"
+               "1. Mencari Luas\n"
+               "2. Mencari Keliling\n"
+               "Pilihan: ");
+        scanf("%c", &rumus);
+        switch (rumus)
+        {
+	case '1':
+            printf("\nMasukan Alas = ");
+            scanf("%lf", &alas);
+            printf("Masukkan Tinggi = ");
+            scanf("%lf", &tinggi);
+            luas = ( alas * tinggi );
+            printf("Luas = %.2lf", luas);	
         break;
     case '5':
         break;
